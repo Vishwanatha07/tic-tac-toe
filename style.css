@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0C7489;
+    text-align: center;
+}
+
+.container {
+    height: 70vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.5rem rgba(255, 0, 0, 0.5);
+    font-size: 8vmin;
+    color: #13505B;
+    background-color: #ff6633;
+}
+
+h1 {
+    padding-bottom: 1rem;
+    font-size: 80px;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from 
+    {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to 
+    {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.resetBtn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #BEC5AD;
+    color: #34252F;
+    border: none;
+    border-radius: 1rem;
+}
+
+.newBtn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #BEC5AD;
+    color: #34252F;
+    border: none;
+    border-radius: 1rem;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0.10rem;
+}
+
+.msg{
+    color: #BEC5AD;
+    font-size: 2.5rem;
+    
+}
+
+.hide{
+   display: none;
+}
